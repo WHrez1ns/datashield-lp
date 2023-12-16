@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r108/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATASHIELD</title>
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/js/app.js" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-logo">
+        <img class="logo" src="../static/assets/images/logo-ds.svg" alt="" />
+        <h1>DATASHIELD</h1>
+      </div>
+
+      <ul class="navbar-options">
+        <li>
+          <a href="#home"><p>Home</p></a>
+        </li>
+        <li>
+          <a href="#ferramenta"><p>Ferramenta</p></a>
+        </li>
+        <li>
+          <a href="#nos"><p>Nós</p></a>
+        </li>
+        <li>
+          <a href="#planos"><p>Planos</p></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Main-->
+    <main id="home">
+      <div class="banner">
+        <video autoplay loop muted width="100%">
+          <source src="../static/assets/waves.mp4" type="video/mp4" />
+        </video>
+        <div class="banner-content">
+          <div class="banner-content-up">
+            <h1 class="title bold">Proteja seus dados, conserve as</h1>
+            <h1 class="title italic">histórias memoráveis</h1>
+          </div>
+          <div class="banner-content-down">
+            <!-- Comentario -->
+            <div class="banner-content-down-subtitle">
+              <div>
+                <p style="color: var(--white)" class="comment">
+                  Conquiste a segurança dos seus dados
+                </p>
+                <p style="color: var(--white)" class="comment">
+                  com a ferramenta Datashield
+                </p>
+              </div>
+              <hr class="line" width="125%" color="#212121" />
+            </div>
+            <!-- Botão -->
+            <a href="#"><button class="btn">Baixar</button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Interface Image -->
+    <section id="ferramenta">
+      <div class="interface">
+        <img
+          class="interface-img"
+          src="../static/assets/images/imagem-interface.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="planos">
+      <div class="planos-title">
+        <h1 class="title bold">Seu computador</h1>
+        <h1 class="title italic">seu plano</h1>
+      </div>
+      <div class="cards">
+        <div class="plano p2">
+          <div class="plano-content">
+            <h2 class="planos-content-titulo">Teste Grátis</h2>
+            <h4 class="planos-content-p">
+              Inicie o uso da ferramenta <br />
+              Datashield por um mês grátis e <br />
+              conheça nosso produto!
+            </h4>
+          </div>
+
+          <a href="#"><button class="btn">Testar</button></a>
+        </div>
+
+        <div class="plano">
+          <div class="plano-titulo">
+            <h2>Plano Mensal</h2>
+            <div class="preco">
+              <h5>R$</h5>
+              <h2>4,35</h2>
+              <h4>/mês</h4>
+            </div>
+          </div>
+          <!-- <img
+                  class="planos-imagens"
+                  src="../static/assets/images/mensal.jpg"
+                  alt=""
+                /> -->
+          <h3 class="planos-subtitulos">1 dispositivo - Windows</h3>
+          <ul>
+            <li><i class="bx bx-check"></i>Proteção contra malware</li>
+            <li><i class="bx bx-check"></i>Monitoramento em tempo real</li>
+            <li>
+              <i class="bx bx-check"></i>Relatório de processos encerrados
+            </li>
+          </ul>
+          <a href="#"><button class="btn2">Baixar</button></a>
+        </div>
+
+        <div class="plano p3">
+          <div class="plano-titulo">
+            <h2>Plano Anual</h2>
+            <div class="preco">
+              <h5>R$</h5>
+              <h2>40,80</h2>
+              <h4>/ano</h4>
+            </div>
+          </div>
+          <!-- <img
+                  class="planos-imagens"
+                  src="../static/assets/images/anual.jpg"
+                  alt=""
+                /> -->
+          <h3 class="planos-subtitulos">1 dispositivo - Windows</h3>
+          <h3 class="planos-subtitulos desconto">20% de desconto</h3>
+          <ul>
+            <li><i class="bx bx-check"></i>Proteção contra malware</li>
+            <li><i class="bx bx-check"></i>Monitoramento em tempo real</li>
+            <li>
+              <i class="bx bx-check"></i>Relatório de processos encerrados
+            </li>
+          </ul>
+
+          <a href="#"><button class="btn2">Baixar</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosso Legado -->
+    <section id="nos">
+      <div class="nosso-legado">
+        <h1 class="title bold">Este é o nosso</h1>
+        <h1 class="title italic">legado</h1>
+        <div class="legado-content">
+          <div class="topicos">
+            <div class="topico t1">
+              <!-- topico 1 -->
+              <h3 class="Mini-Titulo-Bold">Modernidade</h3>
+              <p class="comment">
+                Somos incansáveis em buscar inovação e adotar as últimas
+                tendências tecnológicas para oferecer a você uma experiência
+                atualizada e eficiente.Desde os nossos produtos até o design do
+                nosso site, estamos comprometidos em fornecer soluções que
+                estejam sempre à frente do seu tempo, para que você possa
+                enfrentar os desafios de hoje com as ferramentas do futuro.
+              </p>
+            </div>
+            <div class="topico t2">
+              <!-- topico 2 -->
+              <h3 class="Mini-Titulo-Bold">Integridade</h3>
+              <p class="comment">
+                Investimos em sistemas de segurança de ponta e práticas
+                rigorosas de gerenciamento de dados para garantir que suas
+                informações permaneçam seguras e intocadas. Sua confiança é o
+                nosso bem mais precioso, e estamos comprometidos em mantê-la
+                inabalável.
+              </p>
+            </div>
+            <div class="topico t3">
+              <!-- topico 3 -->
+              <h3 class="Mini-Titulo-Bold">Responsabilidade</h3>
+              <p class="comment">
+                A responsabilidade é o alicerce sobre o qual construímos nossa
+                marca. Comprometemo-nos a agir de maneira ética, com
+                consideração pelo impacto que temos na proteção de dados,
+                acreditando que cada ação conta. Estamos empenhados em fazer
+                escolhas responsáveis em todas as nossas operações.
+              </p>
+            </div>
+          </div>
+          <div class="legado-img">
+            <img src="static/assets/images/sobre-nos.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">
+        <img class="logo" src="../static/assets/images/logo-ds.svg" alt="" />
+        <h1>DATASHIELD</h1>
+      </div>
+
+      <p class="copy">
+        &copy Copyright 2023. Todos os direitos reservados. Mantido por
+        <a href="https://avalontech.net.br" target="_blank">Avalon Tech</a>.
+      </p>
+    </footer>
+  </body>
+</html>

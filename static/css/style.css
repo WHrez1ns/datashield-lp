@@ -1,0 +1,532 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --green: #0b7314;
+  --gray: #616161;
+  --blue: #3e74bb;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "FuturaLT-Bold";
+  src: url("../assets/fonts/FuturaLT-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: url("../assets/fonts/Baskerville10ProMedium-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FuturaLT";
+  src: url("../assets/fonts/FuturaLT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../assets/fonts/Helvetica-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../assets/fonts/Helvetica.woff") format("woff");
+}
+
+body {
+  background-color: var(--black);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+h1 {
+  color: var(--white);
+  font-family: "FuturaLT-Bold";
+}
+
+/* buttons */
+.btn {
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  position: relative;
+  background: transparent;
+  z-index: 99;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 35px;
+}
+
+.navbar-logo h1 {
+  font-size: 15px;
+  font-family: "FuturaLT-Bold";
+}
+
+.navbar-options {
+  font-family: "Helvetica";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--white);
+  gap: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .navbar {
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.banner video {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  z-index: 0;
+}
+
+.banner-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner-content-up {
+  width: 100%;
+}
+
+.title {
+  font-size: 55px;
+}
+
+.title.italic {
+  font-style: italic;
+  font-family: "Baskerville";
+}
+
+.title.bold {
+  font-weight: bold;
+  font-family: "Helvetica-Bold";
+  font-size: 50px;
+}
+
+.banner-content-down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comment {
+  width: 450px;
+  font-size: 15px;
+  color: var(--gray);
+  font-family: "FuturaLT";
+}
+
+.banner-content-down-subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 980px) {
+  .banner video {
+    height: 50vh;
+  }
+
+  .banner-content-down {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  hr.line {
+    width: 100%;
+  }
+}
+
+/* interface */
+.interface {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 101;
+}
+
+.interface img {
+  max-width: 100%;
+  width: 65rem;
+  border: 1.5px solid var(--gray);
+  border-radius: 20px;
+}
+
+.legado-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.legado-content img {
+  width: 350px;
+  height: 350px;
+  max-width: 100%;
+  transform: rotate(45deg);
+}
+
+/* nosso legado */
+.nosso-legado {
+  padding: 0 50px;
+}
+
+.topicos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 50px 0 0 0;
+}
+
+.topico {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topico.t1 {
+  margin-left: 100px;
+}
+
+.topico.t2 {
+  text-align: right;
+  margin-left: 250px;
+}
+
+.topico.t3 {
+  margin-left: 0;
+}
+
+.legado-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mini-Titulo-Bold {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--white);
+  font-family: "FuturaLT-Bold";
+}
+
+p {
+  color: white;
+  font-family: "FuturaLT";
+}
+
+h2 {
+  font-family: "FuturaLT-Bold";
+  color: var(--white);
+}
+
+@media (max-width: 980px) {
+  .interface img {
+    max-width: 90%;
+  }
+
+  .topico.t1,
+  .topico.t2,
+  .topico.t3 {
+    margin: 0;
+  }
+
+  .legado-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .comment {
+    width: auto;
+  }
+
+  .legado-img {
+    max-width: 100%;
+  }
+
+  .legado-content img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Section - Planos */
+.planos {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.plano-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.planos-content-titulo {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.planos-content-subtitulos {
+  font-size: 14px;
+  color: var(--white);
+  font-family: "FuturaLT-Bold";
+  text-align: center;
+}
+
+.planos-content-p {
+  text-align: center;
+  font-family: "FuturaLT";
+  font-size: 16px;
+}
+
+.plano {
+  width: 280px;
+  height: 500px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--gray);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.plano.p2 {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1.5px solid var(--gray);
+  border-left: 1.5px solid var(--gray);
+  border-bottom: 1.5px solid var(--gray);
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.plano.p3 {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1.5px solid var(--gray);
+  border-left: none;
+  border-bottom: 1.5px solid var(--gray);
+  border-right: 1.5px solid var(--gray);
+  border-radius: 0 20px 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.plano ul {
+  list-style-position: inside;
+}
+
+.plano ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-family: "FuturaLT";
+  color: var(--white);
+  line-height: 25px;
+}
+
+.bx-check {
+  color: var(--white);
+}
+
+/* .plano ul li i {
+    font-size: 15px;
+} */
+
+.plano-titulo {
+  color: var(--white);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.planos-subtitulos {
+  font-size: 14px;
+  color: var(--white);
+  font-family: "FuturaLT-Bold";
+}
+
+.planos-subtitulos.desconto {
+  font-size: 20px;
+  color: var(--green);
+  font-family: "FuturaLT-Bold";
+}
+
+.planos-imagens {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.preco {
+  display: flex;
+}
+
+h5 {
+  font-family: "FuturaLT-Bold";
+  font-size: 12px;
+}
+
+.preco h2 {
+  font-size: 30px;
+}
+
+.btn2 {
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 980px) {
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .plano.p2,
+  .plano.p3,
+  .plano {
+    width: 300px;
+    height: 480px;
+    border: 1.5px solid var(--gray);
+    border-radius: 20px;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 0 40px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.copy a {
+  font-family: "FuturaLT-Bold";
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.copy a:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 980px) {
+  footer {
+    padding: 0 40px 40px;
+  }
+}
